@@ -1,0 +1,69 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+
+
+#page_wrapper { 
+
+    .inner_content {
+        @include span-columns(12);
+    }
+}
+
+#header {
+    
+    @include span-columns(12);
+	height: 109.74px;
+	background-color: #4A90E2;
+   
+    .status_bar {
+
+    	p { 
+    	color: red;	    	
+    		    	}
+
+    	.color-bar {
+    		background-color:#3F77BA;
+    		height: 38.55px;
+    	}
+
+        .navigation {
+        }
+    }
+}
+
+    .inner_content {
+        #title {
+        	     
+        	   	@include outer-container(50%);
+
+
+        	h1 {
+				@include span-columns(12);
+        		font-size: 54px;
+        	}
+
+        }
+
+        #top_notes_section {
+        	@include shift(3);
+        	@include span-columns (4);
+
+        }
+
+    }
+
+    form {
+        @include outer-container (50%);
+        #name_entry_form {
+
+        }
+
+        #email_entry_form {
+
+        }
+
+        button {
+            @include button;
+        }
+    }
